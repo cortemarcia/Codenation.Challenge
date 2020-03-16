@@ -17,7 +17,7 @@ def decifra(mensagem, chave):
 			decifrado += letraOriginal
 	return decifrado
 
-#print decifra("zpv nvtu ibwf dibpt jo zpvs tpvm up hjwf cjsui up b ebodjoh tubs. gsjfesjdi ojfuatdif", 1)
+
 
 def main():
 
@@ -46,12 +46,7 @@ def main():
 
 	url2 = 'https://api.codenation.dev/v1/challenge/dev-ps/submit-solution?token=7a0e2c3bc29e536a3f1f931085ca8dd0d3121165'
 
-	# answer = {'answer': open('answer.json', 'rb')}
-
-	# headers = {'content-type': 'multipart/form-data'}
-
-	# r = requests.post(url2, files=answer, headers=headers)
-
+	
 
 	multipart_form_data = {'answer': ('answer.json', open('answer.json', 'rb')) }
 
